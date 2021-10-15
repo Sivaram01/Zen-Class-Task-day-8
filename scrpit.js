@@ -31,7 +31,40 @@ let film = new movie("casino royale" , "Eon Productions" ,"PG13");
 console.log(film);
 console.log(movie3.getPG(movieArray))
 
-
+//Q-2
+class circle{
+    constructor(radius=1.0,color="red"){
+    this.radius=radius;
+    this.color=color;
+    }
+getRadius(){
+    console.log(`Radius of circle is${this.radius}`)
+}
+setRadius(x){
+    this.radius=x;
+    console.log(`radius of circle is set to ${this.radius}`)
+}
+getColor(){
+    console.log(`color of circle is ${this.color}`)
+}
+setColor(x){
+    this.color=x;
+    console.log(`color of circle is set to ${this.color}`)
+}
+getArea(){
+    console.log(`Area of circle is${Math.PI*(this.radius*this.radius)}`)
+}
+getCircumference(){
+    console.log(`circumference of circle is ${Math.pi*(this.radius*this.radius*2)}`)
+}
+}
+const circle1=new circle(2,"blue")
+circle1.getRadius()
+circle1.setRadius(3)
+circle1.getColor()
+circle1.setColor("green")
+circle1.getArea()
+circle1.getCircumference()
 
 
 //Q-3
@@ -47,7 +80,7 @@ class Person {
 
 let person1 = new Person("John" ,"Doe", "25" ,"johndoe@123");
 let person2 = new Person("Johney" ,"Dae", "35" ,"johneydae@123");
-let person3 = new Person("jim" ,"parson", "25" ,"jimparson@123");
+let person3 = new Person("jim" ,"parson", "45" ,"jimparson@123");
 console.log(person1);
 console.log(person2);
 console.log(person3);
@@ -69,12 +102,3 @@ let loaction1 = new uber(5 , 100)
 
 console.log(`Price is :${loaction1.cost}`)
 
-class circle {
-  constructor (radius , color){
-    this.radius = radius;
-    this.color = color;
-  }
-  getRadius(){
-    
-  }
-}
